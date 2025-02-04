@@ -11,4 +11,18 @@
     <string name="save">Save</string>
     <string name="phone_number">Phone Number</string>
     <string name="age">Age</string>
+    <string name="title_activity_form_java">FormJava</string>
+    <string name="form_java_activity">Form Java Activity</string>
+    <string name="dialog_text">Confirm</string>
+    <string name="dialog_message">Do you want to confirm this action ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_form_result">FormResult</string>
+    <string name="first_name_result">First Name = </string>
+    <string name="last_name_result">Last Name = </string>
+    <string name="age_result">Age = </string>
+    <string name="area_of_expertise_result">Area of Expertise = </string>
+    <string name="phone_number_result">Phone Number = </string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
 </resources>

@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
+            android:name=".FormResult"
+            android:exported="false"
+            android:label="@string/title_activity_form_result" />
+        <activity
+            android:name=".FormJava"
+            android:exported="false"
+            android:label="@string/title_activity_form_java" />
+        <activity
             android:name=".HelloWorld"
             android:exported="false"
             android:label="@string/title_activity_hello_world" />
