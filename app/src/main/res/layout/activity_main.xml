@@ -27,4 +27,11 @@
         android:gravity="center"
         android:text="@string/form_java_activity" />
 
+    <Button
+        android:id="@+id/buttonTrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/train_activity" />
+
 </LinearLayout>

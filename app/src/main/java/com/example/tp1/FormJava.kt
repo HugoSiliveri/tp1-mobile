@@ -11,8 +11,8 @@ class FormJava : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val layout_vertical = LinearLayout(this)
-        layout_vertical.orientation = LinearLayout.VERTICAL
+        val layoutVertical = LinearLayout(this)
+        layoutVertical.orientation = LinearLayout.VERTICAL
 
         val editTextFirstName = EditText(this)
         val layoutParams1 = LinearLayout.LayoutParams(
@@ -59,12 +59,12 @@ class FormJava : ComponentActivity() {
         buttonSave.text = getString(R.string.save)
 
 
-        layout_vertical.addView(editTextFirstName)
-        layout_vertical.addView(editTextLastName)
-        layout_vertical.addView(editTextAge)
-        layout_vertical.addView(editTextExpertise)
-        layout_vertical.addView(editTextPhone)
-        layout_vertical.addView(buttonSave)
-        setContentView(layout_vertical)
+        layoutVertical.addView(editTextFirstName)
+        layoutVertical.addView(editTextLastName)
+        layoutVertical.addView(editTextAge)
+        layoutVertical.addView(editTextExpertise)
+        layoutVertical.addView(editTextPhone)
+        layoutVertical.addView(buttonSave)
+        setContentView(layoutVertical)
     }
 }

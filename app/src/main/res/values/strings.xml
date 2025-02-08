@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TP1</string>
     <string name="title_activity_form">Form</string>
@@ -25,4 +26,14 @@
     <string name="phone_number_result">Phone Number = </string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <string name="title_activity_phone">Phone</string>
+    <string name="androidphone">androidPhone</string>
+    <string name="textViewPhoneNumber2">TextView</string>
+    <string name="call">Call</string>
+    <string name="title_activity_train">Train</string>
+    <string name="train_activity">Train Activity</string>
+    <string name="show_schedules">Show schedules</string>
+    <string name="end">End :</string>
+    <string name="start">Start :</string>
+    <string name="title_activity_train_result">TrainResult</string>
 </resources>

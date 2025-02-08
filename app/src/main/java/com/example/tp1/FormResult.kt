@@ -22,7 +22,7 @@ class FormResult : ComponentActivity() {
         val textViewLastName = findViewById<TextView>(R.id.textViewLastName)
         val textViewAge = findViewById<TextView>(R.id.textViewAge)
         val textViewExpertise = findViewById<TextView>(R.id.textViewExpertise)
-        val textViewPhone = findViewById<TextView>(R.id.textViewPhone)
+        val textViewPhone = findViewById<TextView>(R.id.textViewPhoneNumber2)
 
         val fn : String = getString(R.string.first_name_result)
         textViewFirstName.text = "$fn $firstName"
@@ -47,7 +47,9 @@ class FormResult : ComponentActivity() {
         
         val buttonNext = findViewById<Button>(R.id.buttonNext)
         buttonNext.setOnClickListener {
-            val intent2 = Intent(this, MainActivity::class.java)
+            val intent2 = Intent(this, Phone::class.java).apply {
+                putExtra("PHONE", phone)
+            }
             startActivity(intent2)
         }
     }

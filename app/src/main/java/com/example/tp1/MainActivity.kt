@@ -31,6 +31,12 @@ class MainActivity : ComponentActivity() {
             val intent3 = Intent(this, FormJava::class.java)
             startActivity(intent3)
         }
+
+        val buttonTrain = findViewById<Button>(R.id.buttonTrain)
+        buttonTrain.setOnClickListener {
+            val intent4 = Intent(this, Train::class.java)
+            startActivity(intent4)
+        }
     }
 
     /**
