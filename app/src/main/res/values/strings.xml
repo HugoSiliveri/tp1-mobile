@@ -36,4 +36,8 @@
     <string name="end">End :</string>
     <string name="start">Start :</string>
     <string name="title_activity_train_result">TrainResult</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="write_an_event">Write an event</string>
+    <string name="add_event">Add Event</string>
+    <string name="calendar_activity">Calendar Activity</string>
 </resources>

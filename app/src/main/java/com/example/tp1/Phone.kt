@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat
 class Phone : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.phone_activity)
+        setContentView(R.layout.activity_phone)
 
         val phone = intent.getStringExtra("PHONE")
         val textViewPhoneNumber = findViewById<TextView>(R.id.textViewPhoneNumber2)

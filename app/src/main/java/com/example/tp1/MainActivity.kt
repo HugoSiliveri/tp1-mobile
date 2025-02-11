@@ -37,6 +37,12 @@ class MainActivity : ComponentActivity() {
             val intent4 = Intent(this, Train::class.java)
             startActivity(intent4)
         }
+
+        val buttonCalendar = findViewById<Button>(R.id.buttonCalendar)
+        buttonCalendar.setOnClickListener {
+            val intent5 = Intent(this, Calendar::class.java)
+            startActivity(intent5)
+        }
     }
 
     /**

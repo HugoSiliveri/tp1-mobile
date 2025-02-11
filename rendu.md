@@ -38,3 +38,5 @@ affichage que moi
 <img src="screenshots/exo8-2.png" alt="exo8-2" width="200"/>
 
 ### Exercice 9
+
+<img src="screenshots/exo9.png" alt="exo8-2" width="200"/>
