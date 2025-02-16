@@ -21,6 +21,7 @@ class TrainResult : ComponentActivity() {
 
         val random = Random
 
+        // Regroupe la liste des trajets
         val layoutVertical = LinearLayout(this)
         layoutVertical.orientation = LinearLayout.VERTICAL
         layoutVertical.layoutParams = LinearLayout.LayoutParams(
@@ -37,6 +38,7 @@ class TrainResult : ComponentActivity() {
         val nbElem = random.nextInt(1, 8)
         for (i in 0..nbElem) {
 
+            //Layout d'un trajet
             val layoutVertical2 = LinearLayout(this)
             layoutVertical2.orientation = LinearLayout.VERTICAL
             layoutVertical2.setBackgroundResource(R.drawable.border)
@@ -51,6 +53,7 @@ class TrainResult : ComponentActivity() {
             }
             layoutVertical2.layoutParams = layoutParams
 
+            // Layout qui regroupe les deux layout des horaires avec leurs villes
             val layoutVertical3 = LinearLayout(this)
             layoutVertical3.orientation = LinearLayout.VERTICAL
             val layoutParams2 = LinearLayout.LayoutParams(
@@ -60,14 +63,19 @@ class TrainResult : ComponentActivity() {
             layoutParams2.setMargins(50, 50, 50, 15)
             layoutVertical3.layoutParams = layoutParams2
 
-
+            // Layout de la partie du haut d'un trajet (horaires et prix)
             val layoutHorizontal = LinearLayout(this)
             layoutHorizontal.orientation = LinearLayout.HORIZONTAL
+
+            // Layout de l'horaire et de la ville de départ
             val layoutHorizontal2 = LinearLayout(this)
             layoutHorizontal2.orientation = LinearLayout.HORIZONTAL
+
+            // Layout de l'horaire et de la ville d'arrivée
             val layoutHorizontal3 = LinearLayout(this)
             layoutHorizontal3.orientation = LinearLayout.HORIZONTAL
 
+            //Layout de la partie du bas d'un trajet (durée du trajet et date)
             val layoutHorizontal4 = LinearLayout(this)
             layoutHorizontal4.orientation = LinearLayout.HORIZONTAL
             val layoutParams3 = LinearLayout.LayoutParams(
@@ -77,6 +85,7 @@ class TrainResult : ComponentActivity() {
             layoutParams3.setMargins(50, 15, 50, 50)
             layoutHorizontal4.layoutParams = layoutParams3
 
+            // Layout du prix
             val layoutHorizontal5 = LinearLayout(this)
             layoutHorizontal5.orientation = LinearLayout.HORIZONTAL
             val layoutParams4 = LinearLayout.LayoutParams(
@@ -86,7 +95,7 @@ class TrainResult : ComponentActivity() {
             layoutParams4.gravity = Gravity.CENTER
             layoutHorizontal5.layoutParams = layoutParams4
 
-
+            // Génération aléatoire des horaires et de la durée de façon cohérente
             val startHour = random.nextInt(6, 22)
             val startMinute = random.nextInt(0, 60)
             val departureTime = String.format("%02d:%02d", startHour, startMinute)
